@@ -3,14 +3,14 @@
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -mx-4 -my-8">
     @foreach ($events as $event)
-    <div class="py-8 px-4 lg:w-1/3 {{ $event->premium ? 'border bg-yellow-100' : '' }}">
+    <div class="py-8 px-4 lg:w-1/3 {{ $event->premium ? 'border bg-orange-100' : '' }}">
     <div class="h-full flex items-start">
         <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-        <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">{{ $event->starts_at->translatedformat('M') }}</span>
+        <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-300">{{ $event->starts_at->translatedformat('M') }}</span>
         <span class="font-medium text-lg text-gray-800 title-font leading-none">{{ $event->starts_at->translatedformat('d') }}</span>
         </div>
         <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-        <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">{{ $event->ends_at->translatedformat('M') }}</span>
+        <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-300">{{ $event->ends_at->translatedformat('M') }}</span>
         <span class="font-medium text-lg text-gray-800 title-font leading-none">{{ $event->ends_at->translatedformat('d') }}</span>
         </div>
         <div class="flex-grow pl-6">
